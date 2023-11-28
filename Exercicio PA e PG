@@ -1,0 +1,38 @@
+#include <math.h>
+#include <stdio.h>
+
+int main() {
+
+  int n1PA = 22;
+  int dPA = 2;
+
+  int n1PG = 22;
+  double qPG = 2.0;
+
+  int n2PA = 35;
+  int d2PA = 2;
+
+  int n2PG = 35;
+  double q2PG = 2.0;
+
+  printf("(PA de 22):\n");
+  for (int i = 0; i < 22; i++) {
+    printf("%d ", n1PA + i * dPA);
+  }
+
+  printf("\n\n(PG de 22):\n");
+  for (int i = 0; i < 22; i++) {
+    printf("%.0f ", n1PG * pow(qPG, i));
+  }
+
+  printf("\n\n(PA de 35):\n");
+  for (int i = 0; i < 22; i++) {
+    printf("%d ", n2PA + i * d2PA);
+  }
+
+  printf("\n\n(PG de 35):\n");
+  for (int i = 0; i < 22; i++) {
+    printf("%.0f ", n2PG * pow(q2PG, i));
+  }
+  return 0;
+}
